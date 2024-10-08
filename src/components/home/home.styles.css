@@ -1,0 +1,77 @@
+/* Main container for the full-height background */
+.home {
+    height: 100vh;                    
+    width: 100%;                     
+    background-size: cover;          
+    background-position: center;      
+    transition: background-image 3s ease-in-out;  /* Smooth transition between images */
+    text-align: center;                
+    background-repeat: no-repeat;      
+    overflow: hidden;                 
+    margin: 0;                         
+    display: flex;                     
+    flex-direction: column;           
+    justify-content: center;         
+    align-items: center;              
+}
+
+/* Styling for the heading (h1) */
+.home h1 {
+    font-size: 5rem;                   /* Responsive size for heading */
+    font-weight: 900;                
+    height: 150px;                      
+    text-align: center;                
+    font-style: normal;              
+    color: white;                    
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.7); 
+    margin: 0;                       
+    padding: 20px 20px;                 
+}
+
+/* Styling for the paragraph (p) */
+.home p {
+    font-size: 1.5rem;                /* Use rem for responsive text size */
+    font-weight: 300;                 
+    padding: 20px;               
+    text-align: center;           
+    font-style: normal;          
+    color: white;                
+    max-width: 800px;           
+    line-height: 1.5;                
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6); 
+    margin: 0;                        
+}
+
+/* Button styling */
+.home button {
+    padding: 15px 30px;                
+    font-size: 1rem;                   
+    border-radius: 50px;              
+    background-color: #FFC40C;          
+    color: #333;                    
+    font-weight: bold;            
+    border: none;                   
+    cursor: pointer;               
+    box-shadow: 2px 4px 10px rgba(210, 185, 82, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Button hover effect */
+.home button:hover {
+    background-color: #ffc003;       
+    transform: scale(1.05);          
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2.5rem;           
+    }
+    .home p {
+        font-size: 1rem;              
+    }
+    .home button {
+        padding: 10px 20px;          
+        font-size: 0.875rem;        
+    }
+}

@@ -1,0 +1,78 @@
+.about {
+    transition: opacity 1s ease-in-out;
+    background-image: linear-gradient(
+        to bottom, 
+        #959d9733, /* Light semi-transparent top layer */
+        rgba(59, 61, 60, 0.7)     /* Darker semi-transparent bottom layer */
+    ),
+    url('../../assets/The-Semien-Mountains-National-park1.jpg');
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+   background-repeat: no-repeat;
+   overflow: hidden;
+   margin: 0;
+   background-position: center;
+    background-size: cover;
+  
+}
+
+ /* header text styling */    
+.about h1 {
+
+    font-size:4rem;
+    font-weight: bolder;
+    height: auto;
+    text-align: center;
+    font-style: normal;
+    color: white;
+    padding-top: 50px;
+
+}
+/* Paragraph text styling */
+.about p {
+  
+    font-size:2rem;
+    font-weight: lighter;
+    padding-top: 100px;
+    text-align: center;
+    font-style: normal;
+    color: white;
+   
+}
+
+
+.about button {
+    padding: 15px 30px;                
+    font-size: 1rem;                   
+    border-radius: 50px;              
+    background-color: #FFC40C;          
+    color: #333;                    
+    font-weight: bold;            
+    border: none;                   
+    cursor: pointer;               
+    box-shadow: 2px 4px 10px rgba(210, 185, 82, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Button hover effect */
+.about button:hover {
+    background-color: #ffc003;       
+    transform: scale(1.05);          
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about h1 {
+        font-size: 2.5rem;           
+    }
+    .about p {
+        font-size: 1rem;              
+    }
+    .about button {
+        padding: 10px 20px;          
+        font-size: 0.875rem;        
+    }
+}
